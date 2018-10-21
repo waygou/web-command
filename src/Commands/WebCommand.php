@@ -50,7 +50,7 @@ class WebCommand extends Command
 
         // executes after the command finishes
         if (!$process->isSuccessful()) {
-            return((new ProcessFailedException($process))->getMessage());
+            return (new ProcessFailedException($process))->getMessage();
         }
 
         return $process->getOutput();
