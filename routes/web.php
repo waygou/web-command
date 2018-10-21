@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Artisan;
 
 Route::get('webcommand', function () {
     return view('webcommand::form');
